@@ -1,0 +1,129 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    flex: 0 0 auto; /* Maintain fixed size for photo */
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-text {
+    flex: 1; /* Take remaining space */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+section {
+    background: #fff;
+    margin: 1rem auto;
+    padding: 2rem;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 1rem;
+}
+
+section ul li h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+section ul li p {
+    margin: 0.5rem 0;
+}
+#address {
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#address h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+#address p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+}
